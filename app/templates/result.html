@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body  style=" background-color:#4682b4;">
+    <div id="div-total">    
+        <div id="div-result" style=" background-color:#4682b4;">
+        <!-- <h1 id="titulo-id">Resultado de la Predicción</h1> -->
+        <h1><p><u><b>Resultados:</b></u></p></h1>
+        <h3><p>{{ prediction }}</p></h3>
+        <br>
+        <!-- <p>Nivel de error : {{ probability_porcentaje }}</p> -->
+        <br>
+        </div>
+    </div> 
+    <center>
+    <table>
+        <caption>Resultados Globales</caption>
+        <tr>
+          <th colspan="6">Cuestionario de Inventario de Depresión de Beck-II (BDI-II)</th>
+        </tr>
+        <tr>
+          <th colspan="2">Área Conductual</th>
+          <th colspan="2">Área Afectiva</th>
+          <th colspan="2">Área Cognitiva</th>
+        </tr>
+        <tr>
+          <td>Con Depresión</td>
+          <td>Sin Depresión</td>
+          <td>Con Depresión</td>
+          <td>Sin Depresión</td>
+          <td>Con Depresión</td>
+          <td>Sin Depresión</td>
+        </tr>
+        <tr>
+          <td>68%</td>
+          <td>57%</td>
+          <td>32%</td>
+          <td>43%</td>
+          <td>32%</td>
+          <td>43%</td>
+        </tr>
+      </table>
+    </center>   
+</body>
+
+    <p><small>Elaborado por: Elisbeth Barriga y Flavio Muñoz</small></p>
+    <p><small>Proyecto:
+       Sistema de Pronóstico usando técnica de Machine Learning para la detección de la depresión en personas adultas del Condominio Residencial Ciudad Verde
+    </small></p>
+
+</html>
